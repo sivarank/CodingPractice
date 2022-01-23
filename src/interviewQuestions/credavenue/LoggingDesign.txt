@@ -1,0 +1,27 @@
+Design a logging system like syslog / event viewer. 
+
+The logger should log the processId, name of process/application, time of event along with the actual log message. 
+It should also support different types of log levels such as FATAL, ERROR, WARN, INFO, DEBUG.
+
+=====================
+
+1. Size of the log file 
+ preserve old files
+ 
+ 
+ 1.evt 100 MB  
+ 
+2. Text format 
+
+userSessionID  
+
+
+[DATETIME][ Log Level] [PID] [APP NAME] [LOG MESSAGE] \r\n
+
+
+
+log.error("array out of bound index"); 
+
+result: rejection
+
+I did not explain Kafka properly

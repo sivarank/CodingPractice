@@ -1,0 +1,100 @@
+
+
+Requirements:
+
+1) 3 / 3  = 9 
+
+2) only two players 
+3) row, column  & diagonal 
+4) no winner 
+--> restart or abort ? 
+5) UI interface not part of our design . Assumption 
+6) after declaring winner 
+   two choices 1) restart 2) stop game
+7) Player one use 0  (True) marker  player1
+                  1   (false) marker  player2 
+8) timeout ? 
+  infinite wait 
+  
+9) if player enters multiple inputs ?
+   consider only first input . 
+10) do we need to History ? 
+
+
+11) enter invalid input. 
+show error message, ask for input again 
+				  
+Data Structures:
+
+[3][3] 2-d Integer array
+
+Boolean (object) = null 
+boolean  true oe false 
+
+
+int 
+Integer 
+  true true true  == player1 
+  false false false = = player2 
+
+Boolean flag = new Boolean(); 
+
+initialize and reset 2d array data structure to null . 
+
+
+Class identification: 
+
+1) Board   --- it holds  2-d array structure. 
+   
+   BoardStatus boardStatus; 
+   
+   functions:
+    public void initialize();  // read configuration 
+	public Boolean  addInput(int x, int y) //  x = 0,1,2   y = 0,1,2  // it validate cell location . if it is invalid ask for input again
+	                        
+
+2) BoardStatus 
+	public String getGameStatus();  // Inprogress, Completed , Aborted 
+	public String getWinner();// it returns winner either player1 or player2. null if is there is no winner	
+       
+2) checkWinner 
+   
+   functions:
+   Boolean checkWinner(int x, int y, Board board){  // return true if there is a winner . otherwise false 
+   }
+   
+   1) 3 same cells in row 
+   1) 3 same cells in column
+   1) 3 same cells in diagonal     
+   
+   
+
+3) Player 
+
+   functions: 
+
+4) MainBoardClass   
+
+   1. Board 
+   2.CheckWinner
+   3.BoardStatus 
+   
+   Fucntions:
+   1.startGame
+   1. getInput
+   
+
+   
+
+
+// invoke checkWinner(x,y, Board board)  object to check game outcome
+
+
+4) coin  --- colour   -- not required 
+ 
+
+				  
+
+
+
+

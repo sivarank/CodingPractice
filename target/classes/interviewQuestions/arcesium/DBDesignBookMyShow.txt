@@ -1,0 +1,112 @@
+Design a ticketmaster/bookmyshow
+
+Bookmyshow
+
+-- use registration   -- out of scope 
+-- user authentication 
+-- User Profile 
+   preferences
+-- previous ticket history 
+-- movies catalog
+-- Theaters 
+--  
+- review movie
+   - upvote 
+-- search movies/theaters 
+-- book ticket 
+   --- payment 
+-- ticket notification 
+
+=====================
+SQL vs No SQL 
+
+Redis cache -> 
+==
+Cities 
+
+cityID cityName(1024) cityAddress 
+
+select * from cities where cityName like ''
+512 chatr
+==
+
+==
+Movies   (CityID)
+==
+
+==
+Theater                 (cityID)
+Screen     (TheaterID)   (MovieID)  
+
+BookingSeats (ScreenID) 
+
+Category  ()
+
+Seats   (categoryID)
+ 1 - 500 
+
+
+MovieShow 10:00 pm 
+
+MovieSeats  (movishowID)                             
+seatID.  seatStatus           amount 
+ 1         Free/inprogrees 
+ 2 
+
+ 
+
+
+=====
+
+==
+Profiles 
+
+Indian  
+===
+
+==
+MovieTicket
+
+MovieSeatID TicketPrice   paymentStatus    
+                             True 
+                             False 
+                             
+                             
+hash() -- 0- 10000                              
+
+===
+MoviewReview 
+
+
+
+
+
+1         Free
+
+
+
+
+
+
+
+
+=======================================================================
+
+select city --> select cinema theater--> select movie --> select show (screen)--> select seat --> book ticket 
+
+                                           MovieTicket
+									          1   *
+
+     1  *         1  1*      1 1*       1 * 
+City ----> Cinema ---> Screen --> Seat ---> ShowSeat
+                          
+						  1  1*      1     1*
+		                 ---> Show ----------> 
+						        1   1
+						        ----> Movie
+								1    *
+								----->Booking  ---> Booking status
+								            ------> invoice 
+						 
+						 
+						 

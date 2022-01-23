@@ -1,0 +1,78 @@
+
+Music app 
+
+
+1. audio  
+2. catalog songs 
+   - language 
+   - movie 
+   - sad /love 
+3. search 
+   - list song meta data  
+4. my play lists  
+     
+5. profile 
+   - language 
+   - subscription plan : free, premium 
+   - email 
+   - username / password 
+   - registration
+6. provide song 
+
+7. song recommendations  ? 
+
+8.popular songs 
+
+
+REST API
+
+GET api/v1/search/{input}
+ 
+  response JSON 
+  {
+     "songs info":
+     [
+	  {
+	    "song name": ""
+		"playtime": "",
+		"movie name": ""
+		""
+	  },
+	  {
+	  }
+	  
+	 ]
+	 "album info":
+	 [
+	 ]
+  }
+
+==========================
+
+
+S3 bucket - BLOBL
+
+Songs  table
+
+ID  (String GUID)
+movieID (GUID)                   Movie key
+playTime (double)
+SongTitle (String)
+S3Reference (String) // actual song location
+songReleaseTime (DateTime)
+Genre (String) 
+
+
+Movie 
+
+ID  
+Language
+numberOfSongs
+cast (String) 
+Title 
+ReleaseTime 
+
+
+
+
+

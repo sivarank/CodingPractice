@@ -1,0 +1,70 @@
+1. Reliance shares 
+ Infosys Shares 
+    
+	- BSE sensex code (REL) 
+	-daily  trade volume  -- Integer
+	-dialy  close share price -- double
+	-type of industry  -- String 
+	- xyz 
+
+
+2. 	risk calculation <--> selective attributes 
+
+3. Risk manager define some attribures
+
+ selct type of domain -> select shares -> choose attributes 
+ 
+ Configuyration 
+ 
+ 
+ batch job report --> configuration + share data 
+ 
+ 
+ ============================
+ 
+ 
+ Configuration data 
+ 
+ 
+ 
+ 
+  selct type of domain -> select shares -> choose attributes
+  
+  
+   batch job report --> configuration + share data
+  
+  clipboard (json  : )
+  
+  
+  BLOB
+  
+  
+  
+  ======
+  
+  
+  
+  key  1st - 30th Dec  
+       31st - 29th jan 
+  
+  ====
+  
+  
+  Securities
+  
+ shareCode varchar(128) ,  shareName  varchar(256), dailyTradeVolume int, knowledgestart dateTime ,knowledgeendTime dateTime, commitDate date 
+
+
+  
+
+Select   * from Securities where knowledgeendTime is null and commitDate = ''; 
+  
+   
+   
+> 10    millions 
+
+
+   
+  
+  
+  

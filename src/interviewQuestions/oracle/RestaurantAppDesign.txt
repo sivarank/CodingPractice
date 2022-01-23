@@ -1,0 +1,100 @@
+1. registered user only can book restaurant
+
+2. search by location, zip , restaurant name 
+
+3. scenario 1: selct restaurant  --> select available restauntat slot +  provide number of people --> booking 
+
+4. scenario 2: timeslot  + number of people --> select restauntat --> booking 
+
+5. notification (email & sms, whatsapp )
+
+
+6. 
+
+5.  
+
+and book table 
+
+4. restaurant catalogue 
+   - onboarding restaurant 
+   
+   - open close timings 
+   - rating 
+
+6. offers 
+   - subcription offers
+   -- credit card offers
+   
+
+
+
+   
+9. admin access user 
+  
+9. users 
+    - customer
+	- app admin 
+	- restaurant admin 
+ 
+
+8. payment
+   - credit card
+   - cash 
+   - debit card 
+9. browser / mobile ==  mobile    
+1. web appplication , restaurant booking 
+4. 
+2. USA location  === 
+=====
+
+
+non functional requirement
+
+- low latency 
+- authentication / authorization 
+- reliable 
+- available 
+
+=====================
+
+restaurant 
+
+10am (opening) - 10 pm   (closing)
+10-11, 11-12, 12-1, 1-2. .... 9-10 pm                   12 slots
+free seats 100    95     10 
+
+capacity = 100 
+           96 
+
+{
+timeslot : 10-11am
+free seats: 100 
+}
+
+{
+timeslot : 11-12am
+free seats: 100 
+}
+
+
+
+slot1     starttime-endtime  freeseats  isBookingOpen 
+slot2                                     flase 
+
+
+
+where starttime-endtime = inputSlotTime  AND freeseats >= requiredSeats 
+
+
+v1/restauntats/{restaurantID}/ 
+
+
+
+
+
+
+4 
+
+
+
+
